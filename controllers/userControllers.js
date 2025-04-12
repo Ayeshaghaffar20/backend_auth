@@ -31,3 +31,20 @@ export const getUserData = async (req, res) => {
     }
 
 }
+
+export const getAllUsers = async (req, res) => {
+    try {
+        // const users = await User.find();
+        res.status(200).json({
+            success: true,
+            // data: users
+            data: 'abc'
+        });
+    } catch (err) {
+        res.status(500).json({
+            success: false,
+            message: 'Server Error',
+            error: err.message
+        });
+    }
+};
