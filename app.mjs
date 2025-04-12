@@ -16,7 +16,7 @@ const port = process.env.PORT || 3000
 // Mongodb connection
 connectDB()
 
-const allowedOrigin = ['http://localhost:5173']
+const allowedOrigin = ['http://localhost:5173', 'https://mern-auth-ten-delta.vercel.app']
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true })); // ✅ For form data
